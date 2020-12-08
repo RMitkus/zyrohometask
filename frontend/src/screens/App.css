@@ -1,0 +1,99 @@
+.App {
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 60vw;
+  text-align: center;
+  border-spacing: 10px;
+}
+
+th {
+  cursor: pointer;
+  color: black;
+  border: 1px solid #455a64;
+  padding: 8px;
+  background-color: #bd9184;
+}
+th:hover {
+  color: white;
+  background-color: #ff6e40;
+}
+
+tr:nth-child(odd) {
+  background-color: #b0bec5;
+}
+tr:nth-child(even) {
+  background-color: #cfd8dc;
+}
+td {
+  padding: 6px;
+  border: 1px solid gray;
+}
+
+table tr:hover:not(:nth-child(0)) {
+  background-color: #455a64;
+  color: #cfd8dc;
+}
+
+.active {
+  color: black;
+  background-color: #ff6e40 !important;
+}
+
+.showAllBtn {
+  border: 1px solid #ff6e40;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 5px;
+  color: #ff6e40;
+  margin: 1em auto 1em 5%;
+}
+
+.showAllBtn:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #ff6e40;
+  cursor: pointer;
+}
+
+.showAllBtn:focus {
+  outline: none;
+}
+
+.markedData {
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  font-weight: 200;
+  width: 60vw;
+  justify-content: space-around;
+  margin: 8px 0;
+}
+
+.markedData button {
+  border: 1px solid #ff6e40;
+  background-color: transparent;
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #ff6e40;
+  margin: 8px;
+  cursor: pointer;
+}
+.markedData button:hover {
+  border: 1px solid #ffffff;
+  background-color: #ff6e40;
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #ffffff;
+  margin: 8px;
+  cursor: pointer;
+}
+.markedData button:focus {
+  outline: none;
+}
