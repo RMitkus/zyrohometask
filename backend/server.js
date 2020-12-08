@@ -2,6 +2,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import connectDB from './config/db.js'
 import dataRoutes from './routes/dataRoutes.js'
+import path from 'path'
 const app = express()
 
 app.use(express.json())
